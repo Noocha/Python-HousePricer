@@ -1,0 +1,6 @@
+framework module Pods_HousePricePrediction {
+  umbrella header "Pods-HousePricePrediction-umbrella.h"
+
+  export *
+  module * { export * }
+}

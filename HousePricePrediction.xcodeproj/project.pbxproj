@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DEBEE2CF8129BD82CFB1745 /* Pods_HousePricePrediction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26991FAE839F0B7B16F378EA /* Pods_HousePricePrediction.framework */; };
+		CB0E772F2376C98F00916D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E772E2376C98F00916D27 /* AppDelegate.swift */; };
+		CB0E77312376C98F00916D27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E77302376C98F00916D27 /* SceneDelegate.swift */; };
+		CB0E77332376C98F00916D27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0E77322376C98F00916D27 /* ViewController.swift */; };
+		CB0E77362376C98F00916D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0E77342376C98F00916D27 /* Main.storyboard */; };
+		CB0E77382376C99200916D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0E77372376C99200916D27 /* Assets.xcassets */; };
+		CB0E773B2376C99200916D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0E77392376C99200916D27 /* LaunchScreen.storyboard */; };
+		CB15AEFF238941FE00A61804 /* HouseLatLongPricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CB15AEFE238941FE00A61804 /* HouseLatLongPricer.mlmodel */; };
+		CB15AF01238942C800A61804 /* HousePricer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CB15AF00238942C800A61804 /* HousePricer.mlmodel */; };
+		CBF73A91238960C200613DBB /* PredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF73A90238960C200613DBB /* PredictViewController.swift */; };
+		CBF73AA12389A54600613DBB /* YBTextPickerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF73A982389A54600613DBB /* YBTextPickerDataModel.swift */; };
+		CBF73AA22389A54600613DBB /* YBTextPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF73A9A2389A54600613DBB /* YBTextPickerCell.xib */; };
+		CBF73AA32389A54600613DBB /* YBTextPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF73A9B2389A54600613DBB /* YBTextPickerCell.swift */; };
+		CBF73AA42389A54600613DBB /* YBTextPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF73A9C2389A54600613DBB /* YBTextPicker.swift */; };
+		CBF73AA52389A54600613DBB /* YBTextPicker_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF73A9E2389A54600613DBB /* YBTextPicker_checked.png */; };
+		CBF73AA62389A54600613DBB /* YBTextPicker_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = CBF73A9F2389A54600613DBB /* YBTextPicker_unchecked.png */; };
+		CBF73AA72389A54600613DBB /* YBTextPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF73AA02389A54600613DBB /* YBTextPicker.xib */; };
+		CBF73AA92389C97F00613DBB /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF73AA82389C97F00613DBB /* HouseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26991FAE839F0B7B16F378EA /* Pods_HousePricePrediction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HousePricePrediction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD8577A50F26A190857F226 /* Pods-HousePricePrediction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HousePricePrediction.release.xcconfig"; path = "Target Support Files/Pods-HousePricePrediction/Pods-HousePricePrediction.release.xcconfig"; sourceTree = "<group>"; };
+		B6E8A2DD1CC508558A8E0367 /* Pods-HousePricePrediction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HousePricePrediction.debug.xcconfig"; path = "Target Support Files/Pods-HousePricePrediction/Pods-HousePricePrediction.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0E772B2376C98F00916D27 /* House Pricer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "House Pricer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0E772E2376C98F00916D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB0E77302376C98F00916D27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB0E77322376C98F00916D27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB0E77352376C98F00916D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB0E77372376C99200916D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB0E773A2376C99200916D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB0E773C2376C99200916D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0E77422376C9BB00916D27 /* HousePricePlayGround.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = HousePricePlayGround.playground; path = "../../../../Library/Autosave Information/HousePricePlayGround.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CB15AEFE238941FE00A61804 /* HouseLatLongPricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HouseLatLongPricer.mlmodel; sourceTree = "<group>"; };
+		CB15AF00238942C800A61804 /* HousePricer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HousePricer.mlmodel; sourceTree = "<group>"; };
+		CB1E8B7623FEF45000107DF5 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1E8B9A23FEFC3D00107DF5 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1E8B9E23FF017000107DF5 /* CDAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CDAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC629D523FEF2CD0089BB60 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF73A90238960C200613DBB /* PredictViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictViewController.swift; sourceTree = "<group>"; };
+		CBF73A982389A54600613DBB /* YBTextPickerDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBTextPickerDataModel.swift; sourceTree = "<group>"; };
+		CBF73A9A2389A54600613DBB /* YBTextPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBTextPickerCell.xib; sourceTree = "<group>"; };
+		CBF73A9B2389A54600613DBB /* YBTextPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBTextPickerCell.swift; sourceTree = "<group>"; };
+		CBF73A9C2389A54600613DBB /* YBTextPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBTextPicker.swift; sourceTree = "<group>"; };
+		CBF73A9E2389A54600613DBB /* YBTextPicker_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YBTextPicker_checked.png; sourceTree = "<group>"; };
+		CBF73A9F2389A54600613DBB /* YBTextPicker_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YBTextPicker_unchecked.png; sourceTree = "<group>"; };
+		CBF73AA02389A54600613DBB /* YBTextPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBTextPicker.xib; sourceTree = "<group>"; };
+		CBF73AA82389C97F00613DBB /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB0E77282376C98F00916D27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEBEE2CF8129BD82CFB1745 /* Pods_HousePricePrediction.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		303A95129E1E44C6899351B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6E8A2DD1CC508558A8E0367 /* Pods-HousePricePrediction.debug.xcconfig */,
+				3BD8577A50F26A190857F226 /* Pods-HousePricePrediction.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A36F48E77D6379D9216056B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB1E8B9E23FF017000107DF5 /* CDAlertView.framework */,
+				CB1E8B9A23FEFC3D00107DF5 /* Alamofire.framework */,
+				CB1E8B7623FEF45000107DF5 /* Alamofire.framework */,
+				CBC629D523FEF2CD0089BB60 /* Alamofire.framework */,
+				26991FAE839F0B7B16F378EA /* Pods_HousePricePrediction.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB0E77222376C98F00916D27 = {
+			isa = PBXGroup;
+			children = (
+				CB0E77422376C9BB00916D27 /* HousePricePlayGround.playground */,
+				CB0E772D2376C98F00916D27 /* HousePricePrediction */,
+				CB0E772C2376C98F00916D27 /* Products */,
+				303A95129E1E44C6899351B2 /* Pods */,
+				A36F48E77D6379D9216056B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		CB0E772C2376C98F00916D27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB0E772B2376C98F00916D27 /* House Pricer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB0E772D2376C98F00916D27 /* HousePricePrediction */ = {
+			isa = PBXGroup;
+			children = (
+				CB20704C23FF187D00960BC0 /* Model */,
+				CB0E772E2376C98F00916D27 /* AppDelegate.swift */,
+				CB0E77302376C98F00916D27 /* SceneDelegate.swift */,
+				CB0E77322376C98F00916D27 /* ViewController.swift */,
+				CBF73A90238960C200613DBB /* PredictViewController.swift */,
+				CBF73AA82389C97F00613DBB /* HouseModel.swift */,
+				CB0E77342376C98F00916D27 /* Main.storyboard */,
+				CB0E77372376C99200916D27 /* Assets.xcassets */,
+				CB0E77392376C99200916D27 /* LaunchScreen.storyboard */,
+				CB0E773C2376C99200916D27 /* Info.plist */,
+				CBF73A942389A37D00613DBB /* External Libraries */,
+			);
+			path = HousePricePrediction;
+			sourceTree = "<group>";
+		};
+		CB20704C23FF187D00960BC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB15AF00238942C800A61804 /* HousePricer.mlmodel */,
+				CB15AEFE238941FE00A61804 /* HouseLatLongPricer.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBF73A942389A37D00613DBB /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CBF73A972389A54600613DBB /* YBTextPicker */,
+			);
+			path = "External Libraries";
+			sourceTree = "<group>";
+		};
+		CBF73A972389A54600613DBB /* YBTextPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CBF73A982389A54600613DBB /* YBTextPickerDataModel.swift */,
+				CBF73A992389A54600613DBB /* YBTextPickerCell */,
+				CBF73A9C2389A54600613DBB /* YBTextPicker.swift */,
+				CBF73A9D2389A54600613DBB /* Assets */,
+				CBF73AA02389A54600613DBB /* YBTextPicker.xib */,
+			);
+			path = YBTextPicker;
+			sourceTree = "<group>";
+		};
+		CBF73A992389A54600613DBB /* YBTextPickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				CBF73A9A2389A54600613DBB /* YBTextPickerCell.xib */,
+				CBF73A9B2389A54600613DBB /* YBTextPickerCell.swift */,
+			);
+			path = YBTextPickerCell;
+			sourceTree = "<group>";
+		};
+		CBF73A9D2389A54600613DBB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CBF73A9E2389A54600613DBB /* YBTextPicker_checked.png */,
+				CBF73A9F2389A54600613DBB /* YBTextPicker_unchecked.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB0E772A2376C98F00916D27 /* HousePricePrediction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0E773F2376C99200916D27 /* Build configuration list for PBXNativeTarget "HousePricePrediction" */;
+			buildPhases = (
+				7188BEDC529F5E82169FFBB9 /* [CP] Check Pods Manifest.lock */,
+				CB0E77272376C98F00916D27 /* Sources */,
+				CB0E77282376C98F00916D27 /* Frameworks */,
+				CB0E77292376C98F00916D27 /* Resources */,
+				EAD1932F86FE717BCEC2033C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HousePricePrediction;
+			productName = HousePricePrediction;
+			productReference = CB0E772B2376C98F00916D27 /* House Pricer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB0E77232376C98F00916D27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = nooch;
+				TargetAttributes = {
+					CB0E772A2376C98F00916D27 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = CB0E77262376C98F00916D27 /* Build configuration list for PBXProject "HousePricePrediction" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB0E77222376C98F00916D27;
+			productRefGroup = CB0E772C2376C98F00916D27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB0E772A2376C98F00916D27 /* HousePricePrediction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB0E77292376C98F00916D27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF73AA62389A54600613DBB /* YBTextPicker_unchecked.png in Resources */,
+				CB0E773B2376C99200916D27 /* LaunchScreen.storyboard in Resources */,
+				CB0E77382376C99200916D27 /* Assets.xcassets in Resources */,
+				CB0E77362376C98F00916D27 /* Main.storyboard in Resources */,
+				CBF73AA22389A54600613DBB /* YBTextPickerCell.xib in Resources */,
+				CBF73AA52389A54600613DBB /* YBTextPicker_checked.png in Resources */,
+				CBF73AA72389A54600613DBB /* YBTextPicker.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7188BEDC529F5E82169FFBB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HousePricePrediction-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAD1932F86FE717BCEC2033C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HousePricePrediction/Pods-HousePricePrediction-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HousePricePrediction/Pods-HousePricePrediction-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HousePricePrediction/Pods-HousePricePrediction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB0E77272376C98F00916D27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF73A91238960C200613DBB /* PredictViewController.swift in Sources */,
+				CB15AEFF238941FE00A61804 /* HouseLatLongPricer.mlmodel in Sources */,
+				CB0E77332376C98F00916D27 /* ViewController.swift in Sources */,
+				CBF73AA32389A54600613DBB /* YBTextPickerCell.swift in Sources */,
+				CB0E772F2376C98F00916D27 /* AppDelegate.swift in Sources */,
+				CBF73AA42389A54600613DBB /* YBTextPicker.swift in Sources */,
+				CBF73AA92389C97F00613DBB /* HouseModel.swift in Sources */,
+				CB15AF01238942C800A61804 /* HousePricer.mlmodel in Sources */,
+				CB0E77312376C98F00916D27 /* SceneDelegate.swift in Sources */,
+				CBF73AA12389A54600613DBB /* YBTextPickerDataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB0E77342376C98F00916D27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0E77352376C98F00916D27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB0E77392376C99200916D27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0E773A2376C99200916D27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB0E773D2376C99200916D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB0E773E2376C99200916D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB0E77402376C99200916D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6E8A2DD1CC508558A8E0367 /* Pods-HousePricePrediction.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37JV43H82Z;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = HousePricePrediction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = swe690.HousePricePrediction.com;
+				PRODUCT_NAME = "House Pricer";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CB0E77412376C99200916D27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD8577A50F26A190857F226 /* Pods-HousePricePrediction.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37JV43H82Z;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = HousePricePrediction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = swe690.HousePricePrediction.com;
+				PRODUCT_NAME = "House Pricer";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB0E77262376C98F00916D27 /* Build configuration list for PBXProject "HousePricePrediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0E773D2376C99200916D27 /* Debug */,
+				CB0E773E2376C99200916D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0E773F2376C99200916D27 /* Build configuration list for PBXNativeTarget "HousePricePrediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0E77402376C99200916D27 /* Debug */,
+				CB0E77412376C99200916D27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB0E77232376C98F00916D27 /* Project object */;
+}

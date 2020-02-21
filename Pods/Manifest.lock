@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (5.0.0)
+  - CDAlertView (0.10.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - PickerView (0.4.0)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SPPermissions/Core (5.2.8)
+  - SPPermissions/Location (5.2.8):
+    - SPPermissions/Core
+  - SPPermissions/Notification (5.2.8):
+    - SPPermissions/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0)
+  - CDAlertView
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - PickerView
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SPPermissions/Location
+  - SPPermissions/Notification
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CDAlertView
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - PickerView
+    - SkyFloatingLabelTextField
+    - SPPermissions
+
+SPEC CHECKSUMS:
+  Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
+  CDAlertView: ee6a87c90c4283c8d316d55633db1a6981f1cc51
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  PickerView: a736ea986d992aa3ef32423f475fdf3f3a0cf7d4
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SPPermissions: f9b2d805c5c4280e6c62dba21d23570c6d1b9774
+
+PODFILE CHECKSUM: c2f51ac77970036f11bbb7391b7ff1eb32fec2f0
+
+COCOAPODS: 1.8.4
